@@ -50,5 +50,5 @@ class SETracePolicyGen(SETraceCommand):
             print("(typeattribute %s)" % all_types_id, file=output_fp)
             print("(typeattributeset %s all)" % all_types_id, file=output_fp)
             print("(classpermission %s)" % class_permission_id, file=output_fp)
-            print("(auditallow %s %s %s)" % (source_type, target_type, class_permission_id))
+            print("(auditallow %s %s %s)" % (source_type, target_type, class_permission_id), file=output_fp)
             print("\n".join(class_permissions), file=output_fp)
